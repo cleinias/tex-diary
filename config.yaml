@@ -19,12 +19,12 @@ entry_template: "latex/templates/entries/entry_template.tex"  # Template for ind
 collection_template: "latex/templates/collection/collection_template.tex"  # Template for compiled collections
 
 # Editor Settings
-default_editor: "open"  # Command to open files (macOS: 'open', Linux: 'xdg-open', or specific editor like 'code', 'vim')
+default_editor: "kile"  # Command to open files (macOS: 'open', Linux: 'xdg-open', or specific editor like 'code', 'vim')
 
 # Advanced Settings
-latex_engine: "pdflatex"  # LaTeX compiler to use
+latex_engine: "lualatex"  # LaTeX compiler to use
 latex_options: "-interaction=nonstopmode -file-line-error"  # Command line options for LaTeX compilation
-cleanup_extensions: ".aux .log .out .toc .lof .lot .bbl .blg .fls .fdb_latexmk .synctex.gz .nav .snm .vrb .tmp .tmp~"  # File extensions to clean up after LaTeX compilation
+cleanup_extensions: ".aux .log .bcf .out .toc .lof .lot .bbl .blg .fls .fdb_latexmk .synctex.gz .nav .snm .vrb .tmp .tmp~"  # File extensions to clean up after LaTeX compilation
 
 # Discussion Forum Settings
 enable_discussion_forum: true  # Enable/disable discussion forum on blog posts
