@@ -3,7 +3,7 @@
 # Edit the values below to customize your diary setup.
 
 # Personal Information
-author: "Qiang Liu"
+author: "Stefano Franchi"
 institution: ""
 diary_title: "Research Diary"
 current_year: "auto"  # Use 'auto' for current year
@@ -14,7 +14,7 @@ template_directory: "latex/templates"  # Directory containing LaTeX templates (r
 
 # LaTeX Files (relative paths from diary root)
 style_files_directory: "latex/styles"  # Directory containing .sty files
-bibliography_file: "latex/bibliography/reference.bib"  # Path to your bibliography file
+bibliography_file: "~/Global-biblio.bib"  # Path to your bibliography file
 entry_template: "latex/templates/entries/entry_template.tex"  # Template for individual diary entries
 collection_template: "latex/templates/collection/collection_template.tex"  # Template for compiled collections
 
