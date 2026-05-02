@@ -3,7 +3,40 @@
 %<TAGs>: <TAGS>
 %<TOPICs>: 
 
-\documentclass[11pt,letterpaper]{article}
+\documentclass[11pt,letterpaper,article,oldfontcommands]{memoir}
+\usepackage{fontspec}
+\setmainfont[Ligatures=TeX,Numbers=OldStyle]{Minion Pro}
+\setsansfont[Ligatures=TeX]{Myriad Pro}
+\setmonofont{Linux Libertine Mono O}
+
+%\usepackage{geometry}
+%\geometry{verbose,letterpaper,tmargin=4.1cm,bmargin=4.1cm,headsep=1.5cm}
+\pagestyle{headings}
+\setcounter{secnumdepth}{0}
+\setcounter{tocdepth}{0}
+\usepackage{verbatim}
+\usepackage{microtype}
+\OnehalfSpacing
+
+\usepackage{polyglossia}
+\setdefaultlanguage[variant=american]{english}
+\setotherlanguage{french}
+\setotherlanguage{german}
+\setotherlanguage{italian}
+\setotherlanguage{latin}
+
+\AtBeginDocument{
+    \usepackage[authordate,
+        backend=biber,
+        sorting=nyt,
+        backref=false,
+        alldates=iso8601,
+        cmsdate=both,
+        annotation=false]{biblatex-chicago}
+    \addbibresource{/home/stefano/Documents/tex-diary/assets/bib/Global-biblio.bib}
+    }
+\renewcommand*{\bibname}{References}
+\nobibintoc
 
 \newcommand{\workingDate}{\textsc{<YEAR> $|$ <MONTH_NAME> $|$ <DAY>}}
 \newcommand{\userName}{<AUTHOR>}
@@ -15,12 +48,11 @@
 \usepackage{assets/styles/diary_commands}   % Personal shortcuts and commands
 
 
+
 \begin{document}
 \href{run:<FILENAME>}{\Huge <MONTH_NAME> <DAY_NUMBER>} 
 
 \section{ }
 
-
-\bibliographystyle{apalike} 
-\bibliography{assets/bib/reference}
+\printbibliography
 \end{document}

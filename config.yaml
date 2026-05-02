@@ -14,13 +14,15 @@ template_directory: "latex/templates"  # Directory containing LaTeX templates (r
 
 # LaTeX Files (relative paths from diary root)
 style_files_directory: "latex/styles"  # Directory containing .sty files
-bibliography_file: "~/Global-biblio.bib"  # Path to your bibliography file
+bibliography_file: "Global-biblio.bib"  # Path to your bibliography file
 entry_template: "latex/templates/entries/entry_template.tex"  # Template for individual diary entries
 collection_template: "latex/templates/collection/collection_template.tex"  # Template for compiled collections
 
 # Editor Settings
-default_editor: "kile"  # Command to open files (macOS: 'open', Linux: 'xdg-open', or specific editor like 'code', 'vim')
 
+default_editor: "texstudio"  # Command to open and edit TeX files
+lyx_editor: "lyx-2-4-4"      # Command to edit LyX files and to convert them back to TeX format
+tex2lyx_converter: "tex2lyx-2-4-4"  # Command to convert  TeX files into LyX format
 # Advanced Settings
 latex_engine: "lualatex"  # LaTeX compiler to use
 latex_options: "-interaction=nonstopmode -file-line-error"  # Command line options for LaTeX compilation
